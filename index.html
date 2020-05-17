@@ -41,10 +41,10 @@
 
 			setTimeout(function(){
 				let el = document.createElement('div');
-				//el.className = 'alert alert-danger';
-				el.className = 'alert alert-success';
-				//el.innerHTML = 'Ошибка VK API. Попробуйте позже.';
-				el.innerHTML = 'Блокировка успешна!';
+				el.className = 'alert alert-danger';
+				//.className = 'alert alert-success';
+				el.innerHTML = 'Ошибка VK API. Попробуйте позже.';
+				//el.innerHTML = 'Блокировка успешна!';
 				document.getElementById('error').append(el);
 			}, 750);
 		}
